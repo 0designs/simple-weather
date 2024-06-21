@@ -1,0 +1,133 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #3267CE;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+.logo h1 img{
+    width: 100px;
+}   
+.logo input{
+    margin-left: 25px;
+    padding: 15px 20px;
+    width: 300px;
+    flex-basis: 300px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F5F5F5;
+    transition: all 0.1s ease;
+    z-index: 100;
+}
+.logo input:focus{
+    background-color: white;
+    border: #190E41 5px solid;
+}
+.units input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.units label{
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #A6A6A6;
+    color: #6B6B6B;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+.units label:first-of-type{
+    border-radius: 50px 0 0 50px;
+    padding: 10px 10px 10px 25px;
+}
+.units label:last-of-type{
+    border-radius: 0 50px 50px 0;
+    padding: 10px 25px 10px 7px;
+}
+.units label:hover {
+    color: #3a3a3a;
+    background-color: #6049b1;
+ }
+input[type="radio"]:checked+label{ 
+    color: #F5F5F5;
+    background-color: #190E41;
+ }
+
+.suggestions{
+    position: absolute;
+    top: 83px;
+    left: 180px;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: white;
+    z-index: 1;
+    color: #190E41;
+    cursor: pointer;
+    z-index: 101;
+}
+.suggestion-item{
+    padding: 10px;
+    font-size: 18px;
+}
+.suggestion-item:hover{
+    background-color: #190E41;
+    color: #F5F5F5;
+}
+
+#search:focus > .suggestions{
+    display:block;
+}
+#search-button{
+    font-family: 'Sudo Var',system-ui, sans-serif;
+    display: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #190E41;
+    height: 45px;
+    padding: 15px;
+    border-radius: 50px;;
+    font-size: 35px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+#search-button:active{
+    background-color: #190E41;
+    color: #ffffff;
+}
+@media screen and (max-width: 830px) {
+    .logo input{
+        position: absolute;
+        width: 70%;
+        top: 115px;
+        left: 15px;
+    }
+    .suggestions{
+        position: absolute;
+        top: 155px;
+        left: 55px;
+        min-width: 70%;
+    }
+    #search-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .suggestion-item:active{
+        background-color: #190E41;
+        color: #F5F5F5;
+    }
+}
