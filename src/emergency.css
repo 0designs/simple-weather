@@ -1,0 +1,25 @@
+.emergency {
+    padding: 5px 24px;
+    white-space: nowrap;
+}
+.emergency-text {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: small;
+}
+.emergency-text::after {
+    content: " · ";
+}
+.emergency-animation-container {
+    animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee {
+ from {
+     transform: translateX(100%);
+ }
+ to {
+     transform: translateX(-100%);
+ }
+}

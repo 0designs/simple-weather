@@ -1,0 +1,141 @@
+{
+"@context": [],
+"icons": {
+    "skc": {
+        "description": "Fair/clear",
+        "iconName":["wi-day-sunny","wi-night-clear"]
+    },
+    "few": {
+        "description": "A few clouds",
+        "iconName":["wi-day-sunny","wi-night-clear"]
+    },
+    "sct": {
+        "description": "Partly cloudy",
+        "iconName":["wi-day-sunny-overcast","wi-night-partly-cloudy"]
+    },
+    "bkn": {
+        "description": "Mostly cloudy",
+        "iconName":["wi-cloud","wi-cloudy"]
+    },
+    "ovc": {
+        "description": "Overcast",
+        "iconName":["wi-day-sunny-overcast","wi-night-partly-cloudy"]
+    },
+    "wind_skc": {
+        "description": "Fair/clear and windy",
+        "iconName":["wi-day-windy","wi-windy"]
+    },
+    "wind_few": {
+        "description": "A few clouds and windy",
+        "iconName":["wi-day-cloudy-windy","wi-night-cloudy-windy"]
+    },
+    "wind_sct": {
+        "description": "Partly cloudy and windy",
+        "iconName":["wi-cloudy-windy","wi-cloudy-windy"]
+    },
+    "wind_bkn": {
+        "description": "Mostly cloudy and windy",
+        "iconName":["wi-cloudy-windy","wi-cloudy-windy"]
+    },
+    "wind_ovc": {
+        "description": "Overcast and windy",
+        "iconName":["wi-day-windy","wi-windy"]
+    },
+    "snow": {
+        "description": "Snow",
+        "iconName":["wi-day-snow","wi-night-snow"]   
+    },
+    "rain_snow": {
+        "description": "Rain/snow",
+        "iconName":["wi-day-rain-mix","wi-night-rain-mix"]
+    },
+    "rain_sleet": {
+        "description": "Rain/sleet",
+        "iconName":["wi-day-sleet","wi-night-sleet"]
+    },
+    "snow_sleet": {
+        "description": "Snow/sleet",
+        "iconName":["wi-day-sleet","wi-night-sleet"]
+    },
+    "fzra": {
+        "description": "Freezing rain",
+        "iconName":["wi-day-rain-mix","wi-night-rain-mix"]
+    },
+    "rain_fzra": {
+        "description": "Rain/freezing rain",
+        "iconName":["wi-day-rain-mix","wi-night-rain-mix"]
+    },
+    "snow_fzra": {
+        "description": "Freezing rain/snow",
+        "iconName":["wi-day-rain-mix","wi-night-rain-mix"]
+    },
+    "sleet": {
+        "description": "Sleet",
+        "iconName":["wi-day-sleet","wi-night-sleet"]
+    },
+    "rain": {
+        "description": "Rain",
+        "iconName":["wi-day-rain","wi-night-rain"]
+    },
+    "rain_showers": {
+        "description": "Rain showers (high cloud cover)",
+        "iconName":["wi-showers","wi-showers"]
+    },
+    "rain_showers_hi": {
+        "description": "Rain showers (low cloud cover)",
+        "iconName":["wi-day-showers","wi-night-showers"]
+    },
+    "tsra": {
+        "description": "Thunderstorm (high cloud cover)",
+        "iconName":["wi-thunderstorm","wi-thunderstorm"]
+    },
+    "tsra_sct": {
+        "description": "Thunderstorm (medium cloud cover)",
+        "iconName":["wi-day-thunderstorm","wi-night-thunderstorm"]
+    },
+    "tsra_hi": {
+        "description": "Thunderstorm (low cloud cover)",
+        "iconName":["wi-day-thunderstorm","wi-night-thunderstorm"]
+    },
+    "tornado": {
+        "description": "Tornado",
+        "iconName":["wi-tornado","wi-tornado"]
+    },
+    "hurricane": {
+        "description": "Hurricane conditions",
+        "iconName":["wi-hurricane","wi-hurricane"]
+    },
+    "tropical_storm": {
+        "description": "Tropical storm conditions",
+        "iconName":["wi-hurricane","wi-hurricane"]
+    },
+    "dust": {
+        "description": "Dust",
+        "iconName":["wi-dust","wi-dust"]
+    },
+    "smoke": {
+        "description": "Smoke",
+        "iconName":["wi-smoke","wi-smoke"]
+    },
+    "haze": {
+        "description": "Haze",
+        "iconName":["wi-day-haze","wi-day-haze"]
+    },
+    "hot": {
+        "description": "Hot",
+        "iconName":["wi-hot","wi-hot"]
+    },
+    "cold": {
+        "description": "Cold",
+        "iconName":["wi-snowflake-cold","wi-snowflake-cold"]
+    },
+    "blizzard": {
+        "description": "Blizzard",
+        "iconName":["wi-snow-wind","wi-snow-wind"]
+    },
+    "fog": {
+        "description": "Fog/mist",
+        "iconName":["wi-day-fog","wi-fog"]
+    }
+}
+}

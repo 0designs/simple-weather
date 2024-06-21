@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.cdnfonts.com/css/sudo-var');
+.container {
+    background: linear-gradient(to bottom,  #012459 0%,#001322 100%)#190E41;
+    font-family: 'Inter',system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.2px;
+    min-height: 100vh;
+}
+.emergency-container {
+    background: #a30439;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.forecast-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pagination-button {
+    background-color: #3267CE;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'Sudo Var',system-ui, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    align-self: center;
+    transition: all 0.3s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.pagination-button:hover {
+    background-color: #5887e5;
+    color: #3267CE;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-button:active {
+    background-color: #0b1c3d;
+    color: #3267CE;
+}
+.pagination-button:disabled {
+    background-color: grey;
+    color: #190E41;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.desktop {
+    display: flex;
+}
+.mobile {
+    display: none;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+@media only screen and (max-width: 830px) {
+    .pagination-button {
+        display: none;
+    }
+    .forecast-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    footer {
+        position: relative;
+        padding-bottom: 20px;
+    }
 }
