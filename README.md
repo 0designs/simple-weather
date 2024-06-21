@@ -1,2 +1,10 @@
 # simple-weather
-An simple weather app for US weather forecast, no API keys, no propietary data, no catch.
+An forecast viewer for US cities that just... simple.
+
+## Features
+
+  * Single Page interface.
+  * Uses the official National Weather Service API.
+  * Zero use and need of API keys or cloud services.
+  * Easy to modify the code to add or remove weather info.
+  * Uses both US zip codes and cities plus state.
