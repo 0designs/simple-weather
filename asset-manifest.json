@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/simple-weather/static/css/main.2166ea58.css",
+    "main.js": "/simple-weather/static/js/main.ad4fefbb.js",
+    "static/js/453.8dcb17c6.chunk.js": "/simple-weather/static/js/453.8dcb17c6.chunk.js",
+    "static/media/weathericons-regular-webfont.svg": "/simple-weather/static/media/weathericons-regular-webfont.1341a15172cec8dae06e.svg",
+    "static/media/weathericons-regular-webfont.eot": "/simple-weather/static/media/weathericons-regular-webfont.bb2ec001c20cf752f852.eot",
+    "static/media/weathericons-regular-webfont.ttf": "/simple-weather/static/media/weathericons-regular-webfont.0942d1e1c447d6ce3ffc.ttf",
+    "static/media/weathericons-regular-webfont.woff": "/simple-weather/static/media/weathericons-regular-webfont.371511ddba5fdac0538c.woff",
+    "static/media/weathericons-regular-webfont.woff2": "/simple-weather/static/media/weathericons-regular-webfont.e218aee6928fe3da9ed6.woff2",
+    "static/media/logo.png": "/simple-weather/static/media/logo.1984f48676a5ffd7ecc9.png",
+    "index.html": "/simple-weather/index.html",
+    "main.2166ea58.css.map": "/simple-weather/static/css/main.2166ea58.css.map",
+    "main.ad4fefbb.js.map": "/simple-weather/static/js/main.ad4fefbb.js.map",
+    "453.8dcb17c6.chunk.js.map": "/simple-weather/static/js/453.8dcb17c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2166ea58.css",
+    "static/js/main.ad4fefbb.js"
+  ]
+}
