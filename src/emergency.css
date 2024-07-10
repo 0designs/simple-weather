@@ -1,25 +1,25 @@
 .emergency {
-    padding: 5px 24px;
-    white-space: nowrap;
+  padding: 5px 24px;
+  white-space: nowrap;
 }
 .emergency-text {
-    position: relative;
-    display: inline-block;
-    color: white;
-    font-size: small;
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: small;
 }
 .emergency-text::after {
-    content: " · ";
+  content: " · ";
 }
 .emergency-animation-container {
-    animation: marquee 60s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 @keyframes marquee {
- from {
-     transform: translateX(100%);
- }
- to {
-     transform: translateX(-100%);
- }
+  from {
+    transform: translateX(55%);
+  }
+  to {
+    transform: translateX(-101%);
+  }
 }
