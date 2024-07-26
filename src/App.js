@@ -60,6 +60,8 @@ function App() {
         const alertResponse = await response[0].json();
         console.log(alertResponse);
         setWarning(alertResponse.features);
+        const EmergencyAnimationDurationCalc = 5 * alertResponse.features.length;
+        document.getElementsByClassName("emergency-animation-container")[0].style.animationDuration = `${EmergencyAnimationDurationCalc}s`;
       })
       .catch((err) => console.log(err));
   };
@@ -113,9 +115,9 @@ function App() {
   };
 
   const getIcon = (icon) => {
-    const iconTime = icon.replace("/icons/land/", "").split("/")[0];
+    const iconTime = icon.replace("https://api.weather.gov/icons/land/", "").split("/")[0];
     const iconName = icon
-      .replace("/icons/land/", "")
+      .replace("https://api.weather.gov/icons/land/", "")
       .split("/")[1]
       .split("?")[0]
       .split(",")[0];
@@ -128,18 +130,20 @@ function App() {
   };
 
   const getColor = (icon) => {
-    const iconTime = icon.replace("/icons/land/", "").split("/")[0];
+    const iconTime = icon.replace("https://api.weather.gov/icons/land/", "").split("/")[0];
     if (iconTime === "day") {
       return "wi-back-day";
     } else if (iconTime === "night") {
       return "wi-back-night";
     }
   };
+
   return (
     <div className="container">
       <Navbar
         onResultChange={handleResults}
         unitsimperial={handleunitsimperial}
+        errorfound={!forecastinfo && results ? "Not Found, Try Again or Enter Zip Code" : null}
       />
       <div className="emergency-container">
         <div className="emergency-animation-container">

@@ -3,7 +3,7 @@ import logo from "./logo.png";
 import geodata from "./database/USCities.json";
 import { useState } from "react";
 
-const Navbar = ({ onResultChange, unitsimperial }) => {
+const Navbar = ({ onResultChange, unitsimperial, errorfound }) => {
   const [searchValue, setSearchValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [isimperial, setIsimperial] = useState(true);
@@ -83,34 +83,68 @@ const Navbar = ({ onResultChange, unitsimperial }) => {
       document.getElementById("search").style.display = "none";
     }
   };
+
+  function searchSubmit(event) {
+    event.preventDefault();
+    if (searchValue === "") {
+      return;
+    }
+    else if (suggestions.length === 0) {
+      return;
+    }
+    else if (suggestions.find((suggestion) => suggestion.city === searchValue.split(",")[0])) {
+      if (suggestions.length === 1) {
+        onResultChange(suggestions[0]);
+        return;
+      }
+      else if (suggestions.length > 1) {
+        onResultChange(
+          suggestions.find(
+            (suggestion) =>
+              suggestion.city === searchValue.split(",")[0] &&
+              suggestion.state === searchValue.split(",")[1]
+          )
+        );
+        return;
+      }
+    }
+    else {
+      return;
+    }
+  }
+
   return (
     <nav className="navbar">
       <div className="logo">
         <h1>
           <img src={logo} alt="Simple Weather" />
         </h1>
-        <button type="button" id="search-button" onClick={toggleSearch}>&#x1F50D;</button>
-        <form id="search">
+        <button type="button" id="search-button" onClick={toggleSearch}>
+          &#x1F50D;
+        </button>
+        <form id="search" onSubmit={searchSubmit}>
           <input
             type="text"
             placeholder="Enter an US city or zip code"
             value={searchValue}
             onChange={handleSearchChange}
             onFocus={focusInput}
+            list="suggestions"
           />
-          <div className="suggestions" id="suggestions">
+          <div className="search-error-message">{errorfound}</div>
+          <datalist className="suggestions" id="suggestions" name="suggestions">
             {suggestions.map((suggestion, index) => (
-              <div
-                onClick={() => onResultChange(suggestion)}
+              <option
                 key={index}
                 className="suggestion-item"
-              >
-                {suggestion.city}, {suggestion.state}
-              </div>
+                value={`${suggestion.city},${suggestion.state}`}
+              ></option>
             ))}
-          </div>
+          </datalist>
+
         </form>
       </div>
+
       <div className="units">
         <input
           type="radio"
@@ -121,7 +155,13 @@ const Navbar = ({ onResultChange, unitsimperial }) => {
           onChange={changeUnits}
         />
         <label htmlFor="imperial">°F</label>
-        <input type="radio" name="units" id="metric" value="metric"  onChange={changeUnits}/>
+        <input
+          type="radio"
+          name="units"
+          id="metric"
+          value="metric"
+          onChange={changeUnits}
+        />
         <label htmlFor="metric">°C</label>
       </div>
     </nav>
