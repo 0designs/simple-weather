@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/simple-weather/static/css/main.2166ea58.css",
-    "main.js": "/simple-weather/static/js/main.ad4fefbb.js",
+    "main.css": "/simple-weather/static/css/main.b4a9580d.css",
+    "main.js": "/simple-weather/static/js/main.373fefd6.js",
     "static/js/453.8dcb17c6.chunk.js": "/simple-weather/static/js/453.8dcb17c6.chunk.js",
     "static/media/weathericons-regular-webfont.svg": "/simple-weather/static/media/weathericons-regular-webfont.1341a15172cec8dae06e.svg",
     "static/media/weathericons-regular-webfont.eot": "/simple-weather/static/media/weathericons-regular-webfont.bb2ec001c20cf752f852.eot",
@@ -10,12 +10,12 @@
     "static/media/weathericons-regular-webfont.woff2": "/simple-weather/static/media/weathericons-regular-webfont.e218aee6928fe3da9ed6.woff2",
     "static/media/logo.png": "/simple-weather/static/media/logo.1984f48676a5ffd7ecc9.png",
     "index.html": "/simple-weather/index.html",
-    "main.2166ea58.css.map": "/simple-weather/static/css/main.2166ea58.css.map",
-    "main.ad4fefbb.js.map": "/simple-weather/static/js/main.ad4fefbb.js.map",
+    "main.b4a9580d.css.map": "/simple-weather/static/css/main.b4a9580d.css.map",
+    "main.373fefd6.js.map": "/simple-weather/static/js/main.373fefd6.js.map",
     "453.8dcb17c6.chunk.js.map": "/simple-weather/static/js/453.8dcb17c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2166ea58.css",
-    "static/js/main.ad4fefbb.js"
+    "static/css/main.b4a9580d.css",
+    "static/js/main.373fefd6.js"
   ]
 }
